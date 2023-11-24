@@ -1,0 +1,41 @@
+<h1>Seja bem vindo ao curso de Angular!</h1>
+<h4 class="text-danger">{{ anuncio }}</h4>
+
+<div class="row">
+  <div class="col">
+<app-card-produto
+[foto]="foto"
+[nomeProduto]="nomeProduto"
+[promocao]="promocao"
+[idProduto]="idProduto"
+[dataValidade]="dataValidade"
+[precoProduto]="precoProduto"
+></app-card-produto>
+</div>
+
+<div class="col">
+<app-card-produto
+foto="https://proxy.olhardigital.com.br/wp-content/uploads/2022/09/ps5-5-motivos-para-comprar-o-console-de-nova-geracao-da-sony_741k-1024x576.jpg"
+nomeProduto="PS5"
+[promocao]="false"
+[idProduto]="5"
+dataValidade="2026-12-31"
+[precoProduto]="4999.00"
+></app-card-produto>
+<br>
+<div class="col">
+  <app-card-produto
+  foto="https://classic.exame.com/wp-content/uploads/2020/03/xbox-series-x-1.jpg?quality=70&strip=info&w=909"
+  nomeProduto="XBOX SERIES X"
+  [promocao]="false"
+  [idProduto]="10"
+  dataValidade="2027-12-31"
+  [precoProduto]="3999.00"
+  ></app-card-produto>
+
+  </div>
+  </div>
+
+
+
+
